@@ -39,17 +39,15 @@ html {
   margin: 0;
   padding: 0;
 }
-body,
-html {
-  height: 100%;
-}
 /*background*/
 /*box-model*/
 /*flexbox*/
 /*text*/
 
 body {
+  background-color: var(--Very_light_grayish_blue);
   font-family: "Plus Jakarta Sans", sans-serif;
+  height: 100vh;
 }
 
 p {
@@ -61,56 +59,83 @@ p {
   background-color: var(--Light_grayish_blue_1);
 }
 /** states*/
+main {
+  height: 100%;
+}
+.unread .notificationText::after{
+content:'	\01F534';
+
+}
+
+.notificationsContainer {
+  background-color: var(--White);
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+}
+
+header {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+
+.headerInfo{
+  font-size: 24px;
+}
 #NotificationsCount {
+  font-size: 18px;
+margin-left: 5px;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 5px;
+  padding: 1px 8px;
 }
 
 .markAllReadBtn {
-}
-.markAllReadBtn,
-.groupName,
-.userName,
-.ownPostName {
-  cursor: pointer;
-}
-.markAllReadBtn:hover,
-.groupName:hover,
-.userName:hover,
-.ownPostName:hover {
-  color: var(--Very_dark_blue);
+  border: none;
+  background-color: transparent;
 }
 
 .notification {
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.avaterImg {
+.unread {}
+
+.avatarImg {
+  width: 50px;
+  height: 50px;
 }
 
-.notificationContent {
-}
 
-.userName {
-}
+.notificationContent {}
 
-.ownPostName {
-}
+.notificationText {}
 
-.dot {
-}
+.userName {}
 
-.De {
-}
+.ownPostName {}
 
-.liveredAtTime {
-}
+.dot {}
 
-.DeliveredAtTime {
-}
+.DeliveredAtTime {}
 
-.groupName {
-}
+.groupName {}
 
 .messageBox {
+  padding: 30px;
+  border: 1px rgba(0, 0, 0, .2) solid;
 }
-.messageBox:hover {
-  background-color: var(--Light_grayish_blue_2);
+
+.attached-image {
+   position: relative;
+   right: 0px;
 }
