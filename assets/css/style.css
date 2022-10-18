@@ -49,6 +49,7 @@ html {
 /*text*/
 
 body {
+  background-color: var(--Light_grayish_blue_2);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -61,10 +62,33 @@ p {
   background-color: var(--Light_grayish_blue_1);
 }
 /** states*/
+.main{
+  height: 100%;
+}
+
+.notificationsContainer{
+  width: 700px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header{
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
 #NotificationsCount {
+  background-color: var(--Blue);
+  color: white;
+
+  border-radius: 5px;
+  padding:1px 8px;
 }
 
 .markAllReadBtn {
+  border: none;
+  background-color: transparent;
 }
 .markAllReadBtn,
 .groupName,
@@ -72,14 +96,19 @@ p {
 .ownPostName {
   cursor: pointer;
 }
+
+.groupName,
+.userName,
+.ownPostName {
+  font-weight: 700;
+}
+
+
 .markAllReadBtn:hover,
 .groupName:hover,
 .userName:hover,
 .ownPostName:hover {
-  color: var(--Very_dark_blue);
-}
-
-.notification {
+  color: var(--Blue);
 }
 
 .avaterImg {
