@@ -1,0 +1,116 @@
+:root {
+  --Red: #f65351;
+  --Blue: #0a317b;
+  --White: #ffffff;
+  --Very_light_grayish_blue: #f7fafd;
+  --Light_grayish_blue_1: #e5effa;
+  --Light_grayish_blue_2: #dde7ee;
+  --Grayish_blue: #939dae;
+  --Dark_grayish_blue: #5e6778;
+  --Very_dark_blue: #1c202b;
+}
+/*fonts*/
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/static/PlusJakartaSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/static/PlusJakartaSans-ExtraBold.ttf");
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+/*background*/
+/*box-model*/
+/*flexbox*/
+/*text*/
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+/** states*/
+.unread {
+  background-color: var(--Light_grayish_blue_1);
+}
+/** states*/
+#NotificationsCount {
+}
+
+.markAllReadBtn {
+}
+.markAllReadBtn,
+.groupName,
+.userName,
+.ownPostName {
+  cursor: pointer;
+}
+.markAllReadBtn:hover,
+.groupName:hover,
+.userName:hover,
+.ownPostName:hover {
+  color: var(--Very_dark_blue);
+}
+
+.notification {
+}
+
+.avaterImg {
+}
+
+.notificationContent {
+}
+
+.userName {
+}
+
+.ownPostName {
+}
+
+.dot {
+}
+
+.De {
+}
+
+.liveredAtTime {
+}
+
+.DeliveredAtTime {
+}
+
+.groupName {
+}
+
+.messageBox {
+}
+.messageBox:hover {
+  background-color: var(--Light_grayish_blue_2);
+}
