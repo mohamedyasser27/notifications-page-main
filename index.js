@@ -26,4 +26,28 @@ window.onload = () => {
   });
 
   
-}
+
+  let markAllReadBtn = document.querySelector(".markAllReadBtn");
+
+  function readNotification(notification) {
+    notification.classList.remove("unread");
+    NotificationsCountElement.textContent = `${
+      unreadCount !== 0 ? --unreadCount : 0
+    }`;
+    notification.onclick = null;
+  }
+
+  allUnreadNotifications.forEach((notification) => {
+    notification.onclick = function () {
+      readNotification(this);
+    };
+  });
+
+  markAllReadBtn.onclick = () => {
+    allUnreadNotifications.forEach((notification) => {
+      if (notification.onclick !== null) {
+        notification.onclick();
+      }
+    });
+  };
+};
